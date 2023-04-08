@@ -1,0 +1,16 @@
+{
+    "Styles":
+    [
+        {
+            "Id": 0,
+            "FontSize": 30.0,
+            "FontFamily": "Resources/Fonts/Roboto-Regular.ttf",
+            "FontWeight": "Bold",
+            "FontStyle": "Italic",
+            "Foreground": "255,10,10,255",
+            "Background": "255,100,100,100",
+            "BorderThickness": 5.0,
+            "Visibility": "Visible"
+        }
+    ]
+}

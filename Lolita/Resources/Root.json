@@ -1,0 +1,8 @@
+{
+    "Root":
+    {
+        "MainWindow": "Resources/MainWindow.json",
+        "FirstPage": "Resources/UI/OnLoad.json",
+        "Styles": "Resources/UI/Styles.json"
+    }
+}

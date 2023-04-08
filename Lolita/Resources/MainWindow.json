@@ -1,0 +1,29 @@
+{
+    "MainWindow": {
+        "Window": {
+            "Name": "MainWindow",
+            "Grid": {
+                "Name": "MainGrid",
+                "RowDefinitions": [
+                    "*"
+                ],
+                "ColumnDefinitions": [
+                    "*"
+                ],
+                "VerticalAlignment": "Stretch",
+                "HorizontalAlignment": "Stretch"
+            },
+            "Commands": [{
+                "Event": "Loaded",
+                "Method": "LoadPageModel",
+                "Args":
+                [
+                  {
+                    "Name": "path",
+                    "Value": "Resources/UI/OnLoad.json"
+                  }
+                ]
+            }]
+        }
+    }
+}

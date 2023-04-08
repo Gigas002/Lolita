@@ -1,0 +1,92 @@
+{
+  "Page": {
+    "Grid": {
+      "Name": "MainGrid",
+      "RowDefinitions": [
+        "*",
+        "*"
+      ],
+      "ColumnDefinitions": [
+        "*"
+      ],
+      "VerticalAlignment": "Stretch",
+      "HorizontalAlignment": "Stretch",
+      "Background": "Resources/Images/Bg/Vinny_Moreira-Garden_Of_Japan.jpg",
+      "Children": [{
+          "MediaElement": {
+            "Name": "Bgm",
+            "Source": "Resources/Sound/Music/Loyalty_Freak_Music-It_feels_good_to_be_alive_too.mp3",
+            "Commands": [{
+              "Event": "Initialized",
+              "Method": "PlayMediaElement"
+            }]
+          }
+        },
+        {
+          "Image": {
+            "Name": "Bg",
+            "Source": "Resources/Images/Bg/Vinny_Moreira-Garden_Of_Japan.jpg",
+            "ParentRow": 0,
+            "ParentColumn": 0,
+            "RowSpan": 2,
+            "VerticalAlignment": "Stretch",
+            "HorizontalAlignment": "Stretch"
+          }
+        },
+        {
+          "Grid": {
+            "Name": "ButtonsGrid",
+            "ParentRow": 0,
+            "ParentColumn": 0,
+            "RowDefinitions": [
+              "Auto",
+              "Auto"
+            ],
+            "ColumnDefinitions": [
+              "Auto"
+            ],
+            "VerticalAlignment": "Center",
+            "HorizontalAlignment": "Center",
+            "Children": [{
+              "Button": {
+                "Name": "StartButton",
+                "ParentRow": 0,
+                "ParentColumn": 0,
+                "VerticalAlignment": "Center",
+                "HorizontalAlignment": "Left",
+                "Content": "Start new game",
+                "Commands": [{
+                  "Event": "Click",
+                  "Method": "LoadPageModel",
+                  "Args": [{
+                    "Name": "path",
+                    "Value": "Resources/UI/OnLoad.json"
+                  }]
+                }]
+              }
+            }, {
+              "Button": {
+                "Name": "ExitButton",
+                "ParentRow": 1,
+                "ParentColumn": 0,
+                "VerticalAlignment": "Center",
+                "HorizontalAlignment": "Left",
+                "Content": "Exit"
+              }
+            }]
+          }
+        }, {
+          "Button": {
+            "Name": "ExitButton",
+            "ParentRow": 1,
+            "ParentColumn": 0,
+            "VerticalAlignment": "Center",
+            "HorizontalAlignment": "Left",
+            "Content": "Exit",
+            "StyleId": 0
+          }
+        }
+      ]
+    }
+  }
+}

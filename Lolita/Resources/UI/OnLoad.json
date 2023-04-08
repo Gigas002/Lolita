@@ -1,0 +1,76 @@
+{
+  "Page": {
+    "Grid": {
+      "Name": "MainGrid",
+      "RowDefinitions": [
+        "*"
+      ],
+      "ColumnDefinitions": [
+        "*"
+      ],
+      "VerticalAlignment": "Stretch",
+      "HorizontalAlignment": "Stretch",
+      "Children": [{
+          "MediaElement": {
+            "Name": "OpeningVideo",
+            "ParentRow": 0,
+            "ParentColumn": 0,
+            "VerticalAlignment": "Stretch",
+            "HorizontalAlignment": "Stretch",
+            "Source": "Resources/Video/Visually_Us-Red_Maple_Leaves.mp4",
+            "Commands": [{
+                "Event": "MediaEnded",
+                "Method": "LoopMediaElement"
+              },
+              {
+                "Event": "PreviewMouseLeftButtonUp",
+                "Method": "LoadPageModel",
+                "Args": [{
+                  "Name": "path",
+                  "Value": "Resources/UI/MainMenu.json"
+                }]
+              },
+              {
+                "Event": "Initialized",
+                "Method": "PlayMediaElement"
+              }
+            ]
+          }
+        },
+        {
+          "MediaElement": {
+            "Name": "Bgm",
+            "Source": "Resources/Sound/Audio/White_Cheeked_Gibbon-Nomascus_leucogenys.mp3",
+            "Commands": [{
+              "Event": "Initialized",
+              "Method": "PlayMediaElement"
+            }]
+          }
+        },
+        {
+          "Button": {
+            "Name": "ExitButton",
+            "ParentRow": 0,
+            "ParentColumn": 0,
+            "VerticalAlignment": "Stretch",
+            "HorizontalAlignment": "Center",
+            "Content": "Exit",
+            "Commands": [{
+                "Event": "Click",
+                "Method": "LoadPageModel",
+                "Args": [{
+                  "Name": "path",
+                  "Value": "Resources/UI/MainMenu.json"
+                }]
+              },
+              {
+                "Event": "MouseRightButtonUp",
+                "Method": "CloseApp"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

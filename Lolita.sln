@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lolita", "Lolita\Lolita.csproj", "{CBBE6CAB-6664-41BB-A406-1DD60DB79F68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jaml.Wpf", "..\Jaml\Jaml.Wpf\Jaml.Wpf.csproj", "{F5CA0BC6-B597-4547-AAE2-0A9460097052}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0422910-ADB4-4DEC-AF72-38DCF6C6A322}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBBE6CAB-6664-41BB-A406-1DD60DB79F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBBE6CAB-6664-41BB-A406-1DD60DB79F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBBE6CAB-6664-41BB-A406-1DD60DB79F68}.Debug|x64.ActiveCfg = Debug|x64
+		{CBBE6CAB-6664-41BB-A406-1DD60DB79F68}.Debug|x64.Build.0 = Debug|x64
+		{CBBE6CAB-6664-41BB-A406-1DD60DB79F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBBE6CAB-6664-41BB-A406-1DD60DB79F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBBE6CAB-6664-41BB-A406-1DD60DB79F68}.Release|x64.ActiveCfg = Release|x64
+		{CBBE6CAB-6664-41BB-A406-1DD60DB79F68}.Release|x64.Build.0 = Release|x64
+		{F5CA0BC6-B597-4547-AAE2-0A9460097052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CA0BC6-B597-4547-AAE2-0A9460097052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CA0BC6-B597-4547-AAE2-0A9460097052}.Debug|x64.ActiveCfg = Debug|x64
+		{F5CA0BC6-B597-4547-AAE2-0A9460097052}.Debug|x64.Build.0 = Debug|x64
+		{F5CA0BC6-B597-4547-AAE2-0A9460097052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CA0BC6-B597-4547-AAE2-0A9460097052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5CA0BC6-B597-4547-AAE2-0A9460097052}.Release|x64.ActiveCfg = Release|x64
+		{F5CA0BC6-B597-4547-AAE2-0A9460097052}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69220323-E7D5-47F0-99FD-087598181DCF}
+	EndGlobalSection
+EndGlobal
